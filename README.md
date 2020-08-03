@@ -78,11 +78,10 @@ With dataset2 we see same results as above. Hence we say the kalman filter is su
 ![Only Radar data 1](images/RMSE_R_DS1.PNG)
 ![Only Radar data 2](images/RMSE_R_DS2.PNG)
 
-Tracking only with lidar shows better results compare to rador whereas when compared to sensor fused output, the performance seems to be not good.
+# Performance Analysis with Only LIDAR and RADAR:
+With the above different approaches to the EKF, we see fusion RMSE output values are close to zero than only with Lidar or RADAR. When LIDAR and RADAR performances are compared, we see LIDAR are very good in straight line where as during curves RADAR performances are better compared to LIDAR. Thus both are compensating for their in-efficencies when they are fused together in the EFK.
 
-### To summarize:
-#### Tracking with both rador and lidar, we see performance wise sensor fused output gives better results compared to lidar or radar. When the performance is judged only with one sensor, we see LIDAR performace is good against the radar.
-## Pro Tips
+In the fusionEKF.cpp file I have initialized the lidar and radar input values with the simulator data. This was done inorder to have ouput vx closer to 0. Otherwise it overshoots initially and then settles to expected values.
 
 * [All About Kalman Filters](https://medium.com/self-driving-cars/all-about-kalman-filters-8924abe3aa88)
 * [Sensor Fusion and Object Tracking using an Extended Kalman Filter Algorithm — Part 1](https://medium.com/@mithi/object-tracking-and-fusing-sensor-measurements-using-the-extended-kalman-filter-algorithm-part-1-f2158ef1e4f0)
