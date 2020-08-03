@@ -63,20 +63,20 @@ In order to check the guidelines I installed cpplint using
 The simulator provides noisy lidar and radar measurements which are shown as blue and red dots. The position that is calculated by the kalman filter is displayed as green dots.
 
 The results for dataset 1 are shown in the following image
-![Enable Lidar and Rador data 2](images/Lidar_Radar_Dataset1.PNG)
+![Enable Lidar and Rador data 2](images/RMSE_L_R_DS1.PNG)
 Our tracking is judged to check how far the estimated results is close to true results. This is achived by checking the RMSE value of new estimate with the ground truth values.
 Results with Lidar and rador is less or close to 0.1 which shows error is minimum.
 
-![Enable Lidar and Rador data 2](images/Lidar_radar_dataset2.PNG)
+![Enable Lidar and Rador data 2](images/RMSE_L_R_DS2.PNG)
 With dataset2 we see same results as above. Hence we say the kalman filter is successfully implemented for tracking purpose.
 
 ### Lidar Only
-![Only Lidar data 1](images/OnlyLidar_WithDataset1.PNG)
-![Only Lidar data 2](images/OnlyLidar_WithDataset2.PNG)
+![Only Lidar data 1](images/RMSE_L_DS1.PNG)
+![Only Lidar data 2](images/RMSE_L_DS2.PNG)
 
 ### Radar Only
-![Only Radar data 1](images/OnlyRadar_withDataset1.PNG)
-![Only Radar data 2](images/OnlyRadar_WithDataset2.PNG)
+![Only Radar data 1](images/RMSE_R_DS1.PNG)
+![Only Radar data 2](images/RMSE_R_DS2.PNG)
 
 Tracking only with lidar shows better results compare to rador whereas when compared to sensor fused output, the performance seems to be not good.
 
