@@ -63,7 +63,7 @@ In order to check the guidelines I installed cpplint using
 The simulator provides noisy lidar and radar measurements which are shown as blue and red dots. The position that is calculated by the kalman filter is displayed as green dots.
 
 The results for dataset 1 are shown in the following image
-![Enable Lidar and Rador data 2](images/RMSE_L_R_DS1.PNG)
+![Enable Lidar and Rador data 2](images/RMSE_L_R_DS1.PNG,Title="Lidar and Radar with dataset 1")
 Our tracking is judged to check how far the estimated results is close to true results. This is achived by checking the RMSE value of new estimate with the ground truth values.
 Results with Lidar and rador is less or close to 0.1 which shows error is minimum.
 
